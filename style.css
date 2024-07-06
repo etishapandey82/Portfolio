@@ -68,3 +68,12 @@ nav ul li a:hover {
     color: blueviolet;
 
 }
+.border_for_hr{
+    border: 2px solid;
+    color: black;
+     
+}
+.secondsection{
+    width: 80vw;
+    margin: auto;
+}
