@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -17,9 +19,10 @@
             <div class="right"></div>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Projects</a></li>
-                <li><a href="/">Contact Me</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact Me</a></li>
 
             </ul>
         </nav>
@@ -37,12 +40,155 @@
                     margin: 50px;">
             </div>
         </section>
-        <hr class="border_for_hr">
-        <section class="secondsection"></section>
-        <h3>Internships</h3>
+        <hr>
 
-        
-    </main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <img src="etipic.png" alt style="
+                    width: 20%;
+                    ">
+                <div class="about-content">
+                    <p>Hello, I'm Etisha Pandey, I'm from Indore. I have completed my Computer Science Engineering with
+                        an overall cgpa 8.3.
+                        I specialize in HTML,CSS,Javascript,Python,Sql. and I'm passionate about Web Developer.</p>
+                    <p>In my free time, I enjoy singing, dancing . Feel free to explore my portfolio to see some of my
+                        projects!</p>
+                </div>
+            </div>
+        </section>
+
+
+        <hr>
+
+        <!-- add education section -->
+
+
+        <section id="education">
+            <h2>Education</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                        <th>cgpa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B.Tech in Computer Science and Engineering</td>
+                        <td>IPS ACADEMY Indore</td>
+                        <td>2024</td>
+                        <td>8.3 cgpa</td>
+                    </tr>
+                    <tr>
+                        <td>SSC(12th)</td>
+                        <td>Kendriya Vidyalaya No.1 Rewa</td>
+                        <td>2020</td>
+                        <td>67.8%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr><section id="education">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Internship</th>
+                        <th>Certification</th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Oasis Infobyte</td>
+                        <td>TCS ion young Professional(TCS)</td>
+
+                    </tr>
+                    <tr>
+                        <td>Python Internpe</td>
+                        <td>Python (Coursera)</td>
+                <tbody>
+
+                    <tr>
+                        <td></td>
+                        <td>ETL in PowerBI(Coursera)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- skills -->
+<hr>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skill">
+                <label for="html">HTML</label>
+                <input type="range" id="html"  min="0" max="100" value="90" disabled>
+                <span id="html-value">90%</span>
+            </div>
+            <div class="skill">
+                <label for="css">CSS</label>
+                <input type="range" id="css"  min="0" max="100" value="85" disabled>
+                <span id="css-value">85%</span>
+            </div>
+            <div class="skill">
+                <label for="javascript">JavaScript</label>
+                <input type="range" id="javascript"  min="0" max="100" value="75" disabled>
+                <span id="javascript-value">75%</span>
+            </div>
+            <div class="skill">
+                <label for="python">Python</label>
+                <input type="range" id="python"  min="0" max="100" value="85" disabled>
+                <span id="python-value">85%</span>
+            </div>
+
+            <div class="skill">
+                <label for="Sql">SQL</label>
+                <input type="range" id="Sql"  min="0" max="100" value="75" disabled>
+                <span id="python-value">75%</span>
+            </div>
+        </section>
+        <section>
+    <div>Web Dev Tools : VScode, Git, Github, ETL,POWERBI</div>
+    <div>DataBases : SQL.</div>
+    <div>Soft Skills : Problem Solving, Self-learning, Presentation, Adaptability </div>
+        </section>
+<hr>
+        <!-- contact me -->
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            
+            
+            
+            <!-- Contact Form -->
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone" pattern="^[7-9]{1}[0-9{9}$]">
+                    <!-- <small>Format: 123-456-7890</small> -->
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button onclick="fun()">Send Message</button>
+            </form>
+        </section>
+        </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
@@ -50,7 +196,11 @@
             typeSpeed: 50,
         });
     </script>
+    <script src="script.js"></script>
 
-   
+    
+
+
 </body>
+
 </html>
