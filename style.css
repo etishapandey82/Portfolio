@@ -204,16 +204,16 @@ body {
     margin-bottom: 20px;
 }
 
-.linkedin, #contact-form {
+ #contact-form {
     margin-bottom: 20px;
 }
 
-.linkedin label, #contact-form label {
+ #contact-form label {
     display: block;
     margin-bottom: 5px;
 }
 
-.linkedin input, #contact-form input, #contact-form textarea {
+ #contact-form input, #contact-form textarea {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
@@ -223,7 +223,7 @@ body {
     margin-bottom: 10px;
 }
 
-.linkedin input[type="text"], #contact-form input[type="tel"], #contact-form textarea {
+ #contact-form input[type="tel"], #contact-form textarea {
     width: calc(100% - 32px); /* Adjust width for better appearance */
 }
 
